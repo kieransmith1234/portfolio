@@ -1,0 +1,28 @@
+{% load static%}
+
+{% block extra_css %}
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+{% endblock extra_css %}
+
+<nav class="row navbar navbar-expand-lg nav-custom-style">
+  <div class="col-3" style="text-align: center; padding: 4rem;">
+    <a class="navbar-brand my_name" href="/"></a><br>
+    <p class="subtitle">Full-stack Software Engineer</p>
+  </div>
+  <div class="col-9 collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="margin-left: 50%">
+      <li class="nav-item">
+        <a class="btn btn-sm animated-button thar-one" href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-sm animated-button thar-one" href="{% url 'timeline' %}">My Timeline</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="btn btn-sm animated-button thar-one" href="{% url 'code' %}">Code</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="btn btn-sm animated-button thar-one contact_button" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

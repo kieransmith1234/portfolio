@@ -1,0 +1,70 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+  <link href="{% static 'css/timeline.css' %}" rel="stylesheet">
+  <link href="{% static 'css/base.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid main_container">
+    <div class="container-fluid timeline_container">
+        <section class="design-section">
+            <div class="timeline">
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content animate__animated animate__fadeInRight">
+                    <h3>Secondary School</h3>
+                    <p style="font-weight: bold;">2008 - 2014</p>
+                    <p>Graduated from Honywood Community Science School in Essex.</p>
+                </div>
+                <div class="timeline-component timeline-content animate__animated animate__fadeInLeft">
+                    <h3>College</h3>
+                    <p style="font-weight: bold;">2015 - 2017</p>
+                    <p>Graduated Gloucester College with my Software Development Level 3 Extended Diploma.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content animate__animated animate__fadeInRight">
+                    <h3>University</h3>
+                    <p style="font-weight: bold;">2017 - 2021</p>
+                    <p>Graduated University of Kent with a Computer Science BSc.</p>
+                </div>
+                <div class="timeline-component timeline-content animate__animated animate__fadeInLeft">
+                    <h3>Senior Product Specialist</h3>
+                    <p style="font-weight: bold;">Nov 2021 - Nov 2022</p>
+                    <p>I worked as a senior product specialist for Intel and Google between 2021-2022 which equipped me with excellent communication and client facing skills.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content animate__animated animate__fadeInRight">
+                    <h3>Software Developer</h3>
+                    <p style="font-weight: bold;">Nov 2022 - Present</p>
+                    <p>Employed by Noriker Power as a software developer.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    {% include 'portfolio/footer.html' %}
+    <script>
+        var navbarBrand = document.querySelector('.navbar-brand.my_name');
+        if (navbarBrand) {
+            navbarBrand.innerText = 'MY TIMELINE';
+        }
+    </script>      
+  </div>
+{% endblock %}

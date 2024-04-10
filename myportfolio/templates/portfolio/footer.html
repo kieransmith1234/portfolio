@@ -1,0 +1,31 @@
+{% load static %}
+
+{% block extra_css %}
+    <link href="{% static 'css/footer.css' %}" rel="stylesheet">
+{% endblock %}
+
+<div class="container-fluid" style="width: 100%; padding: 0; margin: 0;">
+  <footer class="text-center text-lg-start footer sticky-footer">
+    <section class="d-flex justify-content-bottom justify-content-lg-between p-4 border-bottom" style="width: 50%; margin: auto;">
+      <img src="../static/images/python.png" style="height: max(2vh, 2vw);">
+      <img src="../static/images/docker.webp" style="height: max(2vh, 2vw);">
+      <img src="../static/images/bootstrap.png" style="height: max(2vh, 2vw);">
+    </section>  
+    <section style="position: relative;">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Thanks for reading...
+            </h6>
+          </div>    
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">Contact</h6>
+            <p>kieran-smith-@outlook.com</p>
+            <p>07711 276987</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>  
+</div>

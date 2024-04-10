@@ -1,0 +1,170 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+  <link href="{% static 'css/base.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid main_container">
+    <div class="row banner_container">
+      <div class="col-6" style="text-align: left;">
+        <ul style="height: 100%; color: white; display: flex; flex-direction: column; justify-content: center; padding: 20%;" class="animate__animated animate__fadeIn">
+          <h3>Stack</h3>
+          <li class="tick">Python</li>
+          <li class="tick">Java</li>
+          <li class="tick">HTML</li>
+          <li class="tick">CSS</li>
+          <li class="tick">SASS</li>
+          <li class="tick">JavaScript</li>
+          <li class="tick">Vue</li>
+          <li class="tick">SQL</li>
+        </ul>
+      </div>
+      <div class="col-6" style="height: 100%; color: white;">
+        <ul style="height: 100%; color: white; display: flex; flex-direction: column; justify-content: center; padding: 20%; float: right;" class="animate__animated animate__fadeIn">
+          <h3>Proficient in</h3>
+          <li class="lightning">Linux</li>
+          <li class="lightning">Django</li>
+          <li class="lightning">Docker</li>
+          <li class="lightning">Postgres</li>
+          <li class="lightning">Unit testing</li>
+          <li class="lightning">Debugging</li>
+          <li class="lightning">Git</li>
+          <li class="lightning">Nginx</li>
+        </ul>
+      </div>
+      <button class="ui-btn animate__animated animate__fadeIn" style="margin: auto; margin-top: -10%;">
+        <span>
+          Read more
+        </span>
+      </button>
+    </div>
+    <div class="row second_row">
+      <div class="row" style="width: 100%;">
+        <div class="col-6" style="height: 50%; margin-left: auto; margin-right: auto; padding-top: 5%; padding-bottom: 2%; margin-bottom: 0;">
+          <h1 class="about_me_header">A little bit about me...</h1>
+          <p class="about_me_text">I am a full-stack software engineer with one year industry experience. I graduated from the University of Kent in 2021 with my Computer Science degree. Currently, 
+            I am employed by Noriker Power as a junior software engineer, where I have acquired many of the skills I possess today. I am part of a small team responsible for developing and maintaining tools for the company's 
+            energy containment sites which span the UK. These sites have a combined worth of just under £1 billion and a capacity of over 300MW, used for dynamic containment or frequency 
+            control contracts with the National Grid. My time at Noriker has been incredibly insightful and high-pressure, yet very rewarding.</p>
+          <p class="about_me_text"></p>
+        </div>
+      </div>
+      <div class="row" style="width: 50%; height: 15%; margin: auto; margin-bottom: 10vh;">
+        <div class="col-4" style="text-align: center; height: 100%;">
+          <img src="../static/images/python.png" style="height: max(3vh, 3vw); margin-top: auto; margin-bottom: auto;">
+        </div>
+        <div class="col-4" style="text-align: center;">
+          <img src="../static/images/docker.webp" style="height: max(3vh, 3vw);">
+        </div>
+        <div class="col-4" style="text-align: center;">
+          <img src="../static/images/bootstrap.png" style="height: max(3vh, 3vw);">
+        </div>
+      </div>
+    </div>
+    <div class="row third_row">
+      <button class="cool_button">CODE
+        <div class="star-1">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+        </div>
+        <div class="star-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+        </div>
+        <div class="star-3">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+        </div>
+        <div class="star-4">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+        </div>
+        <div class="star-5">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+        </div>
+        <div class="star-6">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+        </div>
+      </button>
+    </div>
+
+    <div class="container-fluid fourth_row">
+      <h1 class="modules_title">Some of my uni modules<img src="../static/images/uni.png" style="height: max(2.5vh, 2.5vw); padding-left: 1rem;"></h1>
+      <div class="row module_row">
+        <div class="col-6 module_container">
+          <h2 class="module_title"><span class="pink">Cognitive</span> Neural Networks</h2>
+          <p class="module_text">In my cognitive neural networks module, I studied neural network architecture, learning algorithms, and pattern recognition. Topics included feedforward and recurrent neural networks, backpropagation, deep learning, convolutional neural networks, and generative adversarial networks. It was a comprehensive exploration of AI and its practical applications.</p>
+        </div>
+        <div class="col-6 module_container">
+          <h2 class="module_title"><span class="pink">Natural</span> Computation</h2>
+          <p class="module_text">In my natural computation module during my computer science degree, I explored various computational models inspired by nature. Topics included genetic algorithms, evolutionary computation, swarm intelligence, and artificial immune systems. I gained insights into how these techniques can solve complex optimization and search problems, providing alternative approaches to traditional algorithms.</p>
+        </div>
+      </div>
+      <div class="row module_row" style="height: 33.333333333%;">
+        <div class="col-6 module_container">
+          <h2 class="module_title"><span class="pink">Concurrent</span> Programming</h2>
+          <p class="module_text">In my Concurrent Programming module, I focused on designing and developing programs that can execute multiple tasks simultaneously. Topics covered included concurrency models, synchronization mechanisms such as locks and semaphores, parallel computing, and distributed systems. I learned how to handle challenges like race conditions and deadlocks while improving program performance and efficiency.</p>
+        </div>
+        <div class="col-6 module_container">
+          <h2 class="module_title"><span class="pink">Database</span> Design</h2>
+          <p class="module_text">In my Database Design module, I studied conceptual, logical, and physical database design, normalization, entity-relationship modeling, and SQL. The focus was on data modeling, query optimization, and database management systems, emphasizing data integrity, security, and scalability for effective data storage and retrieval.</p>
+        </div></div>
+      <div class="row module_row" style="height: 33.333333333%;">
+        <div class="col-6 module_container">
+          <h2 class="module_title"><span class="pink">Theory</span> of Computing</h2>
+          <p class="module_text">In my Theory of Computing module, I explored fundamental concepts in computational theory. Topics covered included automata theory, formal languages, Turing machines, computational complexity, and the theory of NP-completeness. I gained insights into the limits of computation, algorithm analysis, and the classification of computational problems.</p>
+        </div>
+        <div class="col-6 module_container">
+          <h2 class="module_title"><span class="pink">Final</span> year project</h2>
+          <p class="module_text">This is some information on neural networks...</p>
+        </div></div>
+    </div>
+    <div class="container-fluid fifth_row">
+      <div class="row" style="height: 100%; justify-content: center;">
+        <div class="col-4 mx-auto">
+          <form action="" method="POST" style="margin-top: 5rem;">
+            <h2 class="send_message_title">Send me a <span class="pink">message</span></h2>
+            <input type="text" class="send_message_name" placeholder="Your name">
+            <textarea class="send_message" rows="4" cols="50" placeholder="Start typing..."></textarea>
+            <button class="ui-btn" style="margin: 2%; font-size: max(.75vh, .75vw);">
+              <span>
+                Send
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var readmore_button = document.querySelector('.ui-btn');
+        var secondRow = document.querySelector('.second_row');
+        readmore_button.addEventListener('click', function() {
+          secondRow.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+
+      var navbarBrand = document.querySelector('.navbar-brand.my_name');
+      if (navbarBrand) {
+        navbarBrand.innerText = 'KIERAN SMITH';
+      }
+    </script>  
+    {% include 'portfolio/footer.html' %}
+  </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+<!--<div class="row row1">
+  <div class="col-12">
+    <div class='console-container' style="font-family: 'Courier Prime', monospace;">
+      <span id='text' style=""></span>
+      <div class='console-underscore' id='console'>
+        &#95;
+      </div>
+    </div>
+  </div>
+</div>-->
